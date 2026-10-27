@@ -33,8 +33,8 @@ export default function ConsultarMesa() {
 
   return (
     <main className="publico">
-      <h1>¡Bienvenidos a nuestra celebración!</h1>
-      <p className="sub">Consulta la mesa asignada a tu familia.</p>
+      <h1>🎃 ¡Bienvenidos a nuestra celebración! 🦇</h1>
+      <p className="sub">Descubre en qué mesa te espera tu familia…</p>
 
       <form onSubmit={consultar}>
         <input
@@ -45,7 +45,7 @@ export default function ConsultarMesa() {
           autoFocus
         />
         <button type="submit" disabled={cargando}>
-          {cargando ? 'Buscando…' : 'CONSULTAR MI MESA'}
+          {cargando ? 'Invocando…' : '👻 CONSULTAR MI MESA'}
         </button>
       </form>
 
@@ -59,13 +59,15 @@ export default function ConsultarMesa() {
 
       {resultados?.map((r) => (
         <div className="tarjeta" key={r.familia}>
-          <h2>¡Bienvenidos, {r.familia}!</h2>
+          <h2>¡Bienvenidos, {r.familia}! 🎃</h2>
           {r.mesa ? (
-            <p className="mesa">🪑 SU MESA ES LA {r.mesa.toUpperCase()}</p>
+            <p className="mesa">🪦 SU MESA ES LA {r.mesa.toUpperCase()}</p>
           ) : (
             <p>Aún no tienen mesa asignada. Consulta con el organizador.</p>
           )}
-          <p>Invitados registrados: {r.personas} {r.personas === 1 ? 'persona' : 'personas'}.</p>
+          <p>
+            Invitados registrados: {r.personas} {r.personas === 1 ? 'persona' : 'personas'}.
+          </p>
         </div>
       ))}
     </main>
