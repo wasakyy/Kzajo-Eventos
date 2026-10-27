@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #faf7f2; color: #2b2b2b; }
+h1 { font-size: 1.6rem; }
+input, select, button { font: inherit; padding: .65rem .8rem; border-radius: 8px; border: 1px solid #ccc; }
+button { background: #7a4b2a; color: #fff; border: 0; cursor: pointer; }
+button:disabled { opacity: .6; }
+button.sec { background: #e6ddd2; color: #333; }
+button.peligro { background: #b3261e; }
+.publico { max-width: 480px; margin: 0 auto; padding: 2rem 1.2rem; text-align: center; }
+.publico form { display: flex; flex-direction: column; gap: .8rem; }
+.sub { color: #666; }
+.tarjeta { background: #fff; border-radius: 14px; padding: 1.2rem; margin-top: 1.2rem; box-shadow: 0 2px 10px #0001; }
+.mesa { font-size: 1.5rem; font-weight: 700; color: #7a4b2a; }
+.error { color: #b3261e; white-space: pre-wrap; }
+.aviso-config { background: #fff3cd; padding: .6rem 1rem; text-align: center; }
+.admin { max-width: 960px; margin: 0 auto; padding: 1rem; }
+.admin header { display: flex; justify-content: space-between; align-items: center; }
+.indicadores { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: .8rem; margin: 1rem 0; }
+.indicadores div { background: #fff; border-radius: 12px; padding: 1rem; text-align: center; box-shadow: 0 1px 6px #0001; }
+.indicadores b { display: block; font-size: 1.8rem; color: #7a4b2a; }
+.panel { background: #fff; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 1px 6px #0001; }
+.fila { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; }
+.fila input[type=number] { width: 90px; }
+table { width: 100%; border-collapse: collapse; margin-top: .8rem; }
+th, td { text-align: left; padding: .5rem; border-bottom: 1px solid #eee; }
+.peq { font-size: .85rem; color: #666; }
+.qr { display: flex; justify-content: center; margin: 1rem 0; }
