@@ -66,7 +66,9 @@ export default function ConsultarMesa() {
             <p>Aún no tienen mesa asignada. Consulta con el organizador.</p>
           )}
           <p>
-            Invitados registrados: {r.personas} {r.personas === 1 ? 'persona' : 'personas'}.
+            {r.personas <= 1
+              ? 'Asistes sin acompañantes.'
+              : `Acompañantes: ${r.personas - 1} ${r.personas - 1 === 1 ? 'persona' : 'personas'}.`}
           </p>
         </div>
       ))}
